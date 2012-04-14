@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+# coding: utf-8
+#
+# name:      vimenv
+# author:    Xu Xiaodong <xxdlhy@gmail.com>
+# license:   GPL
+# created:   2012 Apr 14
+# modified:  2012 Apr 15
+#
+
+require 'fileutils'
+require 'optparse'
+
+def init
+  conf = %w[vimrc vim]
+  conf.each do |item|
+    orig = Dir.pwd + '/_' + item
+    target = Dir.home + '/.' + item
+
+    puts "Symlinking #{orig} to #{target}"
+    FileUtils.symlink(orig, target, force: true)
+  end
+end
+
+def add(author_slash_name)
+  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*)(?:\.vim)?$/, '\1')
+
+  src = 'git://github.com/' + author_slash_name + '.git'
+  desc = '_vim/bundle/' + name
+
+  puts "Adding #{src} to #{desc}"
+
+  arg = ["add #{src} #{desc}", "init", "update"]
+
+  arg.each do |elt|
+    system "git submodule #{elt}"
+  end
+end
+
+def update
+  puts "Updating Vim plugins"
+  system "git submodule foreach git pull"
+end
+
+opts = OptionParser.new
+opts.on("-i", "--init", "Initialize Vim environment") { init }
+opts.on("-a", "--add NAME", "Add Vim plugins") { |val| add(val) }
+opts.on("-u", "--update", "Update Vim plugins") { update }
+
+if ARGV.empty?
+  puts opts.to_s
+else
+  opts.parse(*ARGV)
+end
+
+# vim: ai:et:ts=2:sw=2:sts=2:tw=78:ft=ruby
