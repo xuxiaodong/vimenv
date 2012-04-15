@@ -34,12 +34,7 @@ def add(author_slash_name)
   desc = '_vim/bundle/' + name
 
   puts "Adding #{src} to #{desc}"
-
-  arg = ["add #{src} #{desc}", "init", "update"]
-
-  arg.each do |elt|
-    system "git submodule #{elt}"
-  end
+  system "git submodule add #{src} #{desc}"
 end
 
 def remove(name)
@@ -58,7 +53,12 @@ end
 
 def update
   puts "Updating Vim plugins"
-  system "git submodule foreach git pull"
+
+  arg = ["init", "update", "foreach git pull origin master"]
+
+  arg.each do |elt|
+    system "git submodule #{elt}"
+  end
 end
 
 opts = OptionParser.new
