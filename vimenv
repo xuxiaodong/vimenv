@@ -5,7 +5,7 @@
 # author:    Xu Xiaodong <xxdlhy@gmail.com>
 # license:   GPL
 # created:   2012 Apr 14
-# modified:  2012 Apr 15
+# modified:  2012 Apr 16
 #
 
 require 'fileutils'
@@ -65,7 +65,7 @@ def list
   bundle = Dir.entries('_vim/bundle')
   plugins = bundle[2, bundle.size].sort
 
-  plugins.each { |dir| puts "Installed #{dir}" }
+  plugins.each { |name| puts "Installed #{name}" }
 
   total = plugins.size
   puts "Total #{total} plugins"
@@ -78,6 +78,7 @@ opts.on("-a", "--add NAME", "Add Vim plugins") { |name| add(name) }
 opts.on("-r", "--remove NAME", "Remove Vim plugins") { |name| remove(name) }
 opts.on("-u", "--update", "Update Vim plugins") { update }
 opts.on("-l", "--list", "List Vim plugins") { list }
+opts.on("-h", "--help", "Show help") { puts opts.to_s }
 
 if ARGV.empty?
   puts opts.to_s
