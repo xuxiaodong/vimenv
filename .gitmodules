@@ -22,3 +22,6 @@
 [submodule "_vim/bundle/tagbar"]
 	path = _vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "_vim/bundle/tabular"]
+	path = _vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git

@@ -22,8 +22,13 @@ def init
   end
 end
 
+def edit
+  puts "Editing Vim configuration file"
+  system "vim _vimrc"
+end
+
 def add(author_slash_name)
-  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*)(?:\.vim)?$/, '\1')
+  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:\.vim)?$/, '\1')
 
   src = 'git://github.com/' + author_slash_name + '.git'
   desc = '_vim/bundle/' + name
@@ -37,6 +42,20 @@ def add(author_slash_name)
   end
 end
 
+def remove(name)
+  path = '_vim/bundle/' + name
+  files = [".git/config", ".gitmodules"]
+
+  puts "Removing #{path}"
+  system "git rm --cached #{path} >/dev/null"
+
+  files.each do |file|
+    system "git config -f #{file} --remove-section submodule.#{path}"
+  end
+
+  FileUtils.rmtree(path)
+end
+
 def update
   puts "Updating Vim plugins"
   system "git submodule foreach git pull"
@@ -44,7 +63,9 @@ end
 
 opts = OptionParser.new
 opts.on("-i", "--init", "Initialize Vim environment") { init }
-opts.on("-a", "--add NAME", "Add Vim plugins") { |val| add(val) }
+opts.on("-e", "--edit", "Edit Vim configuration file") { edit }
+opts.on("-a", "--add NAME", "Add Vim plugins") { |name| add(name) }
+opts.on("-r", "--remove NAME", "Remove Vim plugins") { |name| remove(name) }
 opts.on("-u", "--update", "Update Vim plugins") { update }
 
 if ARGV.empty?
