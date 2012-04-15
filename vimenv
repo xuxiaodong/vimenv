@@ -28,7 +28,7 @@ def edit
 end
 
 def add(author_slash_name)
-  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:\.vim)?$/, '\1')
+  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:\.vim)?$/, '\1').downcase
 
   src = 'git://github.com/' + author_slash_name + '.git'
   desc = '_vim/bundle/' + name

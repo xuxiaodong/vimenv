@@ -13,9 +13,6 @@
 [submodule "_vim/bundle/smartinput"]
 	path = _vim/bundle/smartinput
 	url = git://github.com/kana/vim-smartinput.git
-[submodule "_vim/bundle/Command-T"]
-	path = _vim/bundle/Command-T
-	url = git://github.com/wincent/Command-T.git
 [submodule "_vim/bundle/nerdcommenter"]
 	path = _vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -25,3 +22,9 @@
 [submodule "_vim/bundle/tabular"]
 	path = _vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "_vim/bundle/align"]
+	path = _vim/bundle/align
+	url = git://github.com/vim-scripts/Align.git
+[submodule "_vim/bundle/command-t"]
+	path = _vim/bundle/command-t
+	url = git://github.com/wincent/Command-T.git
