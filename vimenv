@@ -5,7 +5,7 @@
 # author:    Xu Xiaodong <xxdlhy@gmail.com>
 # license:   GPL
 # created:   2012 Apr 14
-# modified:  2012 Apr 16
+# modified:  2012 Apr 17
 #
 
 require 'fileutils'
@@ -16,6 +16,12 @@ def init
   conf.each do |item|
     orig = Dir.pwd + '/_' + item
     target = Dir.home + '/.' + item
+    bak = target + '.bak'
+
+    if File.exist?(target) && ! File.symlink?(target)
+      puts "Backuping #{target} to #{bak}"
+      FileUtils.mv(target, bak)
+    end
 
     puts "Symlinking #{orig} to #{target}"
     FileUtils.symlink(orig, target, force: true)
@@ -38,7 +44,7 @@ def add(author_slash_name)
 end
 
 def remove(name)
-  path = '_vim/bundle/' + name
+  path = '_vim/bundle/' + name.downcase
   files = [".git/config", ".gitmodules"]
 
   puts "Removing #{path}"
