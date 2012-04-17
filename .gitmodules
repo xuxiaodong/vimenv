@@ -34,3 +34,6 @@
 [submodule "_vim/bundle/snipmate"]
 	path = _vim/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "_vim/bundle/miro"]
+	path = _vim/bundle/miro
+	url = git://github.com/xuxiaodong/miro-vim.git
