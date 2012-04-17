@@ -23,6 +23,10 @@ def init
       FileUtils.mv(target, bak)
     end
 
+    if File.symlink?(target)
+      FileUtils.rm(target)
+    end
+
     puts "Symlinking #{orig} to #{target}"
     FileUtils.symlink(orig, target, force: true)
   end
