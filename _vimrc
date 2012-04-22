@@ -78,7 +78,7 @@ set whichwrap+=<,>,h,l
 set list
 set listchars=tab:›\ ,eol:¬
 
-set formatprg=par-format\ -w78
+"set formatprg=par-format\ -w78
 
 "-- search --"
 
