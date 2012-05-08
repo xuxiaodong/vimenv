@@ -19,18 +19,9 @@
 [submodule "_vim/bundle/tagbar"]
 	path = _vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule "_vim/bundle/tabular"]
-	path = _vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
 [submodule "_vim/bundle/align"]
 	path = _vim/bundle/align
 	url = git://github.com/vim-scripts/Align.git
-[submodule "_vim/bundle/gist"]
-	path = _vim/bundle/gist
-	url = git://github.com/mattn/gist-vim.git
-[submodule "_vim/bundle/snipmate"]
-	path = _vim/bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
 [submodule "_vim/bundle/miro"]
 	path = _vim/bundle/miro
 	url = git://github.com/xuxiaodong/miro-vim.git

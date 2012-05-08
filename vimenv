@@ -5,7 +5,7 @@
 # author:    Xu Xiaodong <xxdlhy@gmail.com>
 # license:   GPL
 # created:   2012 Apr 14
-# modified:  2012 Apr 17
+# modified:  2012 May 08
 #
 
 require 'fileutils'
@@ -49,6 +49,7 @@ end
 
 def remove(name)
   path = '_vim/bundle/' + name.downcase
+  git_path = '.git/modules/' + path
   files = [".git/config", ".gitmodules"]
 
   puts "Removing #{path}"
@@ -59,6 +60,7 @@ def remove(name)
   end
 
   FileUtils.rmtree(path)
+  FileUtils.rmtree(git_path)
 end
 
 def update

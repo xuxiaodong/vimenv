@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Apr 14
+" modified:  2012 Apr 24
 "
 
 "-- plugin --"
@@ -9,6 +9,9 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+
+" Powerline
+"let g:Powerline_symbols='fancy'
 
 " commant-t
 let g:CommandTAlwaysShowDotFiles=1
