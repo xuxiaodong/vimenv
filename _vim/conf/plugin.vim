@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Apr 24
+" modified:  2012 May 15
 "
 
 "-- plugin --"
@@ -10,20 +10,16 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-" Powerline
+" powerline
 "let g:Powerline_symbols='fancy'
-
-" commant-t
-let g:CommandTAlwaysShowDotFiles=1
-let g:CommandTScanDotDirectories=1
-
-" gsession
-let g:local_session_filename='.session.vim'
 
 " align
 vmap <silent> <leader>i= <esc>:AlignPush<cr>:AlignCtrl lp1P1<cr>:'<,'>Align =<cr>:AlignPop<cr>
 vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr>:AlignPop<cr>
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
+
+" gsession
+let g:local_session_filename='.session.vim'
 
 " yankring
 map <leader>y :YRShow<cr>

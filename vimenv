@@ -1,11 +1,10 @@
 #!/usr/bin/env ruby
-# coding: utf-8
 #
-# name:      vimenv
-# author:    Xu Xiaodong <xxdlhy@gmail.com>
-# license:   GPL
-# created:   2012 Apr 14
-# modified:  2012 May 08
+# name     : vimenv, configure vim environment
+# author   : Xu Xiaodong <xxdlhy@gmail.com>
+# license  : GPL
+# created  : 2012 Apr 14
+# modified : 2012 May 19
 #
 
 require 'fileutils'
@@ -14,9 +13,9 @@ require 'optparse'
 def init
   conf = %w[vimrc vim]
   conf.each do |item|
-    orig = Dir.pwd + '/_' + item
-    target = Dir.home + '/.' + item
-    bak = target + '.bak'
+    orig = "#{Dir.pwd}/_#{item}"
+    target = "#{Dir.home}/.#{item}"
+    bak = "#{target}.old"
 
     if File.exist?(target) && ! File.symlink?(target)
       puts "Backuping #{target} to #{bak}"
@@ -40,16 +39,16 @@ end
 def add(author_slash_name)
   name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:[-\.]vim)?$/, '\1').downcase
 
-  src = 'git://github.com/' + author_slash_name + '.git'
-  desc = '_vim/bundle/' + name
+  src = "git://github.com/#{author_slash_name}.git"
+  desc = "_vim/bundle/#{name}"
 
   puts "Adding #{src} to #{desc}"
   system "git submodule add #{src} #{desc}"
 end
 
 def remove(name)
-  path = '_vim/bundle/' + name.downcase
-  git_path = '.git/modules/' + path
+  path = "_vim/bundle/#{name.downcase}"
+  git_path = ".git/modules/#{path}"
   files = [".git/config", ".gitmodules"]
 
   puts "Removing #{path}"

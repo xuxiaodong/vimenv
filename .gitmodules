@@ -34,3 +34,9 @@
 [submodule "_vim/bundle/surround"]
 	path = _vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "_vim/bundle/the-nerd-tree"]
+	path = _vim/bundle/the-nerd-tree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "_vim/bundle/sunburst"]
+	path = _vim/bundle/sunburst
+	url = git://github.com/sickill/vim-sunburst.git

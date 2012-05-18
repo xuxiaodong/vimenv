@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Apr 17
+" modified:  2012 May 18
 "
 
 "-- source --"
@@ -75,7 +75,7 @@ set iskeyword+=:
 set matchpairs+=<:>
 set whichwrap+=<,>,h,l
 
-set list
+set nolist
 set listchars=tab:›\ ,eol:¬
 
 "set formatprg=par-format\ -w78
