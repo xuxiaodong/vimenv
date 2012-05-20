@@ -19,8 +19,3 @@ Usage
         -u, --update                     Update Vim plugins
         -l, --list                       List Vim plugins
         -h, --help                       Show help
-
-Author
-------
-
-Xu Xiaodong

@@ -1,6 +1,6 @@
 "
-" author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 May 10
+" author   : Xu Xiaodong <xxdlhy@gmail.com>
+" modified : 2012 May 20
 "
 
 "-- update timestamps --"
@@ -29,13 +29,12 @@ function! _ruby_head()
   let filename = bufname("%")
   let date = strftime("%Y %b %d")
   exe "normal i#!/usr/bin/env ruby"
-  exe "normal o# coding: utf-8"
   exe "normal o#"
-  exe "normal o# name:      " . filename
-  exe "normal o# author:    Xu Xiaodong <xxdlhy@gmail.com>"
-  exe "normal o# license:   GPL"
-  exe "normal o# created:   " . date
-  exe "normal o# modified:  " . date
+  exe "normal o# name     : " . filename
+  exe "normal o# author   : Xu Xiaodong <xxdlhy@gmail.com>"
+  exe "normal o# license  : GPL"
+  exe "normal o# created  : " . date
+  exe "normal o# modified : " . date
   exe "normal o#"
 endfunction
 
@@ -46,11 +45,11 @@ function! _perl_head()
   let date = strftime("%Y %b %d")
   exe "normal i#!/usr/bin/env perl"
   exe "normal o#"
-  exe "normal o# name:      " . filename
-  exe "normal o# author:    Xu Xiaodong <xxdlhy@gmail.com>"
-  exe "normal o# license:   GPL"
-  exe "normal o# created:   " . date
-  exe "normal o# modified:  " . date
+  exe "normal o# name     : " . filename
+  exe "normal o# author   : Xu Xiaodong <xxdlhy@gmail.com>"
+  exe "normal o# license  : GPL"
+  exe "normal o# created  : " . date
+  exe "normal o# modified : " . date
   exe "normal o#"
 endfunction
 
