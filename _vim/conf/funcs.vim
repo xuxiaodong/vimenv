@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2012 May 20
+" modified : 2012 May 25
 "
 
 "-- update timestamps --"
@@ -10,7 +10,7 @@ function! _last_modified()
     let save_cursor = getpos(".")
     let n = min([20, line("$")])
     keepjumps exe '1,' . n . 's#^\(.\{,10}modified *: \+\).*#\1' .
-          \ strftime('%Y %b %d') . '#e'
+          \ strftime('%Y %b %d') . '#ei'
     call histdel('search', -1)
     call setpos('.', save_cursor)
   endif

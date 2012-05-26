@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 May 18
+" modified:  2012 May 26
 "
 
 "-- source --"
@@ -39,6 +39,7 @@ syntax on
 if &t_Co < 256
   colorscheme miro8
 else
+  set background=dark
   colorscheme jellybeans
 endif
 
@@ -50,6 +51,7 @@ set autoread
 set noswapfile
 set nowritebackup
 
+"set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gb18030,default
 

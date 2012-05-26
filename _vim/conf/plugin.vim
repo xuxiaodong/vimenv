@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 May 20
+" modified:  2012 May 26
 "
 
 "-- plugin --"
@@ -16,7 +16,10 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " powerline
-"let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='unicode'
+
+" markdown helper
+let g:markdownheader_style="atx"
 
 " gsession
 "let g:local_session_filename='.session.vim'

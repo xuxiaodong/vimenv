@@ -52,3 +52,6 @@
 [submodule "_vim/bundle/matchit"]
 	path = _vim/bundle/matchit
 	url = git://github.com/mirell/vim-matchit.git
+[submodule "_vim/bundle/markdown-helper"]
+	path = _vim/bundle/markdown-helper
+	url = git://github.com/xuxiaodong/vim-markdown-helper.git
