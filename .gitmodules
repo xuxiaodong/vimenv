@@ -7,9 +7,6 @@
 [submodule "_vim/bundle/jellybeans"]
 	path = _vim/bundle/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
-[submodule "_vim/bundle/powerline"]
-	path = _vim/bundle/powerline
-	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "_vim/bundle/smartinput"]
 	path = _vim/bundle/smartinput
 	url = git://github.com/kana/vim-smartinput.git
@@ -55,3 +52,9 @@
 [submodule "_vim/bundle/markdown-helper"]
 	path = _vim/bundle/markdown-helper
 	url = git://github.com/xuxiaodong/vim-markdown-helper.git
+[submodule "_vim/bundle/powerline"]
+	path = _vim/bundle/powerline
+	url = git://github.com/xuxiaodong/vim-powerline.git
+[submodule "_vim/bundle/neverland"]
+	path = _vim/bundle/neverland
+	url = git://github.com/trapd00r/neverland-vim-theme.git

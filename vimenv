@@ -4,7 +4,7 @@
 # author   : Xu Xiaodong <xxdlhy@gmail.com>
 # license  : GPL
 # created  : 2012 Apr 14
-# modified : 2012 May 19
+# modified : 2012 Jun 22
 #
 
 require 'fileutils'
@@ -37,7 +37,7 @@ def edit
 end
 
 def add(author_slash_name)
-  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:[-\.]vim)?$/, '\1').downcase
+  name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:[-\.]vim)?(?:-theme)?$/, '\1').downcase
 
   src = "git://github.com/#{author_slash_name}.git"
   desc = "_vim/bundle/#{name}"

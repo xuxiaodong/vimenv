@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 May 26
+" modified:  2012 Jun 22
 "
 
 "-- plugin --"
@@ -16,10 +16,10 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " powerline
-let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='fancy'
 
 " markdown helper
-let g:markdownheader_style="atx"
+"source ~/code/vim-md-helper/plugin/markdown-helper.vim
 
 " gsession
 "let g:local_session_filename='.session.vim'
