@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 May 26
+" modified:  2012 Jun 23
 "
 
 "-- source --"
@@ -39,8 +39,8 @@ syntax on
 if &t_Co < 256
   colorscheme miro8
 else
-  set background=dark
-  colorscheme jellybeans
+  "set background=dark
+  colorscheme neverland-darker
 endif
 
 "-- file --"

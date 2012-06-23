@@ -58,3 +58,6 @@
 [submodule "_vim/bundle/neverland"]
 	path = _vim/bundle/neverland
 	url = git://github.com/trapd00r/neverland-vim-theme.git
+[submodule "_vim/bundle/slime"]
+	path = _vim/bundle/slime
+	url = git://github.com/jpalardy/vim-slime.git
