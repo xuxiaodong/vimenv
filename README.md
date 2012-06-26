@@ -3,6 +3,8 @@ About
 
 Configure Vim environment.
 
+![Vim](https://github.com/xuxiaodong/vimenv/raw/master/screenshot.png)
+
 Installation
 ------------
 

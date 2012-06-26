@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Jun 22
+" modified:  2012 Jun 23
 "
 
 "-- plugin --"
@@ -17,6 +17,9 @@ vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr
 
 " powerline
 let g:Powerline_symbols='fancy'
+
+" slime
+let g:slime_target='tmux'
 
 " markdown helper
 "source ~/code/vim-md-helper/plugin/markdown-helper.vim
