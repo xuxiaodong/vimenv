@@ -52,9 +52,6 @@
 [submodule "_vim/bundle/markdown-helper"]
 	path = _vim/bundle/markdown-helper
 	url = git://github.com/xuxiaodong/vim-markdown-helper.git
-[submodule "_vim/bundle/powerline"]
-	path = _vim/bundle/powerline
-	url = git://github.com/xuxiaodong/vim-powerline.git
 [submodule "_vim/bundle/neverland"]
 	path = _vim/bundle/neverland
 	url = git://github.com/trapd00r/neverland-vim-theme.git
@@ -64,3 +61,6 @@
 [submodule "_vim/bundle/syntastic"]
 	path = _vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "_vim/bundle/powerline"]
+	path = _vim/bundle/powerline
+	url = git://github.com/xuxiaodong/vim-powerline.git
