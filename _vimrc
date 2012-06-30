@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Jun 28
+" modified:  2012 Jun 30
 "
 
 "-- source --"
@@ -103,6 +103,7 @@ map ; :
 imap jj <esc>
 
 nmap <leader>w :w!<cr>
+nmap <leader>q :qa<cr>
 
 nmap <leader>s :source $MYVIMRC<cr>
 nmap <leader>e :e! $MYVIMRC<cr>

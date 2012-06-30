@@ -1,6 +1,6 @@
 "
-" author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Jun 30
+" author   : Xu Xiaodong <xxdlhy@gmail.com>
+" modified : 2012 Jun 30
 "
 
 "-- plugin --"
@@ -19,7 +19,16 @@ vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr
 let g:Powerline_symbols='fancy'
 
 " nerdtree
+let g:NERDTreeWinSize=25
+let g:NERDTreeMinimalUI=1
 autocmd vimenter * NERDTree
+autocmd vimenter * exe 'winc w'
+nmap nc :NERDTreeToggle<cr>
+
+" tagbar
+let g:tagbar_width=25
+let g:tagbar_compact=1
+nmap to :TagbarToggle<cr>
 
 " slime
 let g:slime_target='tmux'
