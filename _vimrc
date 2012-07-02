@@ -40,7 +40,7 @@ if &t_Co < 256
   colorscheme miro8
 else
   "set background=dark
-  colorscheme neverland-darker
+  colorscheme Tomorrow-Night
 endif
 
 "-- file --"
