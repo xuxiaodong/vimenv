@@ -64,3 +64,9 @@
 [submodule "_vim/bundle/powerline"]
 	path = _vim/bundle/powerline
 	url = git://github.com/xuxiaodong/vim-powerline.git
+[submodule "_vim/bundle/matchtag"]
+	path = _vim/bundle/matchtag
+	url = git://github.com/gregsexton/MatchTag.git
+[submodule "_vim/bundle/numbers"]
+	path = _vim/bundle/numbers
+	url = git://github.com/xuxiaodong/numbers.vim.git
