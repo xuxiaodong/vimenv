@@ -4,7 +4,7 @@
 # author   : Xu Xiaodong <xxdlhy@gmail.com>
 # license  : GPL
 # created  : 2012 Apr 14
-# modified : 2012 Jul 02
+# modified : 2012 Jul 08
 #
 
 require 'fileutils'
@@ -13,18 +13,16 @@ require 'optparse'
 def init
   conf = %w[vimrc vim]
   conf.each do |item|
-    orig = "#{Dir.pwd}/_#{item}"
+    orig   = "#{Dir.pwd}/_#{item}"
     target = "#{ENV['HOME']}/.#{item}" # oops... 1.8.5 does not support Dir.home
-    bak = "#{target}.old"
+    bak    = "#{target}.old"
 
     if File.exist?(target) && ! File.symlink?(target)
       puts "Backuping #{target} to #{bak}"
       FileUtils.mv(target, bak)
     end
 
-    if File.symlink?(target)
-      FileUtils.rm(target)
-    end
+    FileUtils.rm(target) if File.symlink?(target)
 
     puts "Symlinking #{orig} to #{target}"
     FileUtils.symlink(orig, target)
@@ -39,7 +37,7 @@ end
 def add(author_slash_name)
   name = author_slash_name.gsub(/^.*\/(?:vim-)?(.*?)(?:[-\.]vim)?(?:-theme)?$/, '\1').downcase
 
-  src = "git://github.com/#{author_slash_name}.git"
+  src  = "git://github.com/#{author_slash_name}.git"
   desc = "_vim/bundle/#{name}"
 
   puts "Adding #{src} to #{desc}"
@@ -47,16 +45,14 @@ def add(author_slash_name)
 end
 
 def remove(name)
-  path = "_vim/bundle/#{name.downcase}"
+  path     = "_vim/bundle/#{name.downcase}"
   git_path = ".git/modules/#{path}"
-  files = [".git/config", ".gitmodules"]
+  files    = [".git/config", ".gitmodules"]
 
   puts "Removing #{path}"
   system "git rm --cached #{path} >/dev/null"
 
-  files.each do |file|
-    system "git config -f #{file} --remove-section submodule.#{path}"
-  end
+  files.each { |file| system "git config -f #{file} --remove-section submodule.#{path}" }
 
   FileUtils.rmtree(path)
   FileUtils.rmtree(git_path)
@@ -66,14 +62,11 @@ def update
   puts "Updating Vim plugins"
 
   arg = ["init", "update", "foreach git pull origin master"]
-
-  arg.each do |elt|
-    system "git submodule #{elt}"
-  end
+  arg.each { |elt| system "git submodule #{elt}" }
 end
 
 def list
-  bundle = Dir.entries('_vim/bundle')
+  bundle  = Dir.entries('_vim/bundle')
   plugins = bundle[2, bundle.size].sort
 
   plugins.each { |name| puts " * Installed #{name} ..." }
@@ -83,13 +76,13 @@ def list
 end
 
 opts = OptionParser.new
-opts.on("-i", "--init", "Initialize Vim environment") { init }
-opts.on("-e", "--edit", "Edit Vim configuration file") { edit }
-opts.on("-a", "--add NAME", "Add Vim plugins") { |name| add(name) }
-opts.on("-r", "--remove NAME", "Remove Vim plugins") { |name| remove(name) }
-opts.on("-u", "--update", "Update Vim plugins") { update }
-opts.on("-l", "--list", "List Vim plugins") { list }
-opts.on("-h", "--help", "Show help") { puts opts.to_s }
+opts.on("-i", "--init"       , "Initialize Vim environment")  { init }
+opts.on("-e", "--edit"       , "Edit Vim configuration file") { edit }
+opts.on("-a", "--add NAME"   , "Add Vim plugins")             { |name| add(name) }
+opts.on("-r", "--remove NAME", "Remove Vim plugins")          { |name| remove(name) }
+opts.on("-u", "--update"     , "Update Vim plugins")          { update }
+opts.on("-l", "--list"       , "List Vim plugins")            { list }
+opts.on("-h", "--help"       , "Show help")                   { puts opts.to_s }
 
 if ARGV.empty?
   puts opts.to_s

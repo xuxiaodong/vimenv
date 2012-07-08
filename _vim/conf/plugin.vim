@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2012 Jun 30
+" modified : 2012 Jul 07
 "
 
 "-- plugin --"
@@ -17,12 +17,13 @@ vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr
 
 " powerline
 let g:Powerline_symbols='fancy'
+let g:Powerline_theme='codefun'
 
 " nerdtree
 let g:NERDTreeWinSize=25
 let g:NERDTreeMinimalUI=1
-autocmd vimenter * NERDTree
-autocmd vimenter * exe 'winc w'
+"autocmd vimenter * NERDTree
+"autocmd vimenter * exe 'winc w'
 nmap nc :NERDTreeToggle<cr>
 
 " tagbar
