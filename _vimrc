@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Jun 30
+" modified:  2012 Jul 08
 "
 
 "-- source --"
@@ -30,7 +30,7 @@ set display=lastline
 set omnifunc=syntaxcomplete#Complete
 
 set laststatus=2
-set statusline=\ [%n]\ \ %F%m%r\ \ %h%y%w\ \ [%l,%c]\ \ [%L]\ \ [%P]
+" set statusline=\ [%n]\ \ %F%m%r\ \ %h%y%w\ \ [%l,%c]\ \ [%L]\ \ [%P]
 
 syntax on
 
@@ -112,6 +112,7 @@ nmap <leader>e :e! $MYVIMRC<cr>
 nmap Q gqap"
 vmap Q gq
 
+" select window
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -125,6 +126,10 @@ nmap <leader>- <c-w>s<c-w>j
 
 " close window
 nmap <leader>cw :close<cr>
+
+" command history
+cmap <C-p> <Up>
+cmap <C-n> <Down>
 
 " grep
 map <leader>n :cn<cr>

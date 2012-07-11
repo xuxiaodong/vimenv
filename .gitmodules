@@ -76,3 +76,18 @@
 [submodule "_vim/bundle/textobj-entire"]
 	path = _vim/bundle/textobj-entire
 	url = git://github.com/kana/vim-textobj-entire.git
+[submodule "_vim/bundle/endwise"]
+	path = _vim/bundle/endwise
+	url = git://github.com/tpope/vim-endwise.git
+[submodule "_vim/bundle/splitjoin"]
+	path = _vim/bundle/splitjoin
+	url = git://github.com/AndrewRadev/splitjoin.vim.git
+[submodule "_vim/bundle/textobj-function"]
+	path = _vim/bundle/textobj-function
+	url = git://github.com/kana/vim-textobj-function.git
+[submodule "_vim/bundle/textobj-rubysymbol"]
+	path = _vim/bundle/textobj-rubysymbol
+	url = git://github.com/bootleq/vim-textobj-rubysymbol.git
+[submodule "_vim/bundle/ansiesc"]
+	path = _vim/bundle/ansiesc
+	url = git://github.com/vim-scripts/AnsiEsc.vim.git
