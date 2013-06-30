@@ -115,3 +115,6 @@
 [submodule "_vim/bundle/matchit"]
 	path = _vim/bundle/matchit
 	url = git://github.com/edsono/vim-matchit.git
+[submodule "_vim/bundle/perl"]
+	path = _vim/bundle/perl
+	url = git://github.com/vim-perl/vim-perl.git
