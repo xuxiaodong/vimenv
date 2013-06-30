@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2012 Jul 07
+" modified : 2013 Jun 30
 "
 
 "-- plugin --"
@@ -33,6 +33,14 @@ nmap to :TagbarToggle<cr>
 
 " slime
 let g:slime_target='tmux'
+
+" neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+
+" indent guides
+let g:indent_guides_enable_on_vim_startup=0
+let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=1
 
 " markdown
 autocmd BufRead *.md set ft=markdown

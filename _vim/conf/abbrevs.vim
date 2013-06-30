@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2012 May 20
+" modified : 2012 Jul 21
 "
 
 "-- abbrevs --"
@@ -18,3 +18,7 @@ iab _rb #!/usr/bin/env ruby
 
 iab _xt http://linuxtoy.org
 iab _xm <!--more-->
+
+iab _hlb {% highlight bash %}
+iab _hlr {% highlight ruby %}
+iab _ehl {% endhighlight %}

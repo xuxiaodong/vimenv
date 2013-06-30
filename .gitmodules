@@ -91,3 +91,27 @@
 [submodule "_vim/bundle/ansiesc"]
 	path = _vim/bundle/ansiesc
 	url = git://github.com/vim-scripts/AnsiEsc.vim.git
+[submodule "_vim/bundle/tomorrow"]
+	path = _vim/bundle/tomorrow
+	url = git://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "_vim/bundle/color_highlight"]
+	path = _vim/bundle/color_highlight
+	url = git://github.com/chrisbra/color_highlight.git
+[submodule "_vim/bundle/multiple-cursors"]
+	path = _vim/bundle/multiple-cursors
+	url = git://github.com/terryma/vim-multiple-cursors.git
+[submodule "_vim/bundle/nerdtree"]
+	path = _vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "_vim/bundle/gitgutter"]
+	path = _vim/bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "_vim/bundle/neocomplcache"]
+	path = _vim/bundle/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.vim.git
+[submodule "_vim/bundle/indent-guides"]
+	path = _vim/bundle/indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "_vim/bundle/tabular"]
+	path = _vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git

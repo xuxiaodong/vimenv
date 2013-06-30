@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2012 Jul 08
+" modified:  2013 Jun 30
 "
 
 "-- source --"
@@ -36,10 +36,10 @@ syntax on
 
 "-- colorscheme --"
 
+set background=dark
 if &t_Co < 256
   colorscheme miro8
 else
-  "set background=dark
   colorscheme Tomorrow-Night
 endif
 
@@ -60,9 +60,9 @@ set fileencodings=ucs-bom,utf-8,gb18030,default
 set expandtab
 set smarttab
 set shiftround
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set textwidth=78
 
 set autoindent
