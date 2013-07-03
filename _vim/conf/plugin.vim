@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2013 Jul 01
+" modified : 2013 Jul 03
 "
 
 "-- plugin --"
@@ -41,6 +41,10 @@ let g:neocomplcache_enable_at_startup = 1
 let g:indent_guides_enable_on_vim_startup=0
 let g:indent_guides_start_level=1
 let g:indent_guides_guide_size=1
+
+" ultisnips
+let g:UltiSnipsEditSplit='horizontal'
+let g:UltiSnipsSnippetsDir='~/.vim/bundle/ultisnips/UltiSnips'
 
 " markdown
 autocmd BufRead *.md set ft=markdown
