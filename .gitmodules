@@ -118,3 +118,9 @@
 [submodule "_vim/bundle/perl"]
 	path = _vim/bundle/perl
 	url = git://github.com/vim-perl/vim-perl.git
+[submodule "_vim/bundle/ultisnips"]
+	path = _vim/bundle/ultisnips
+	url = git://github.com/SirVer/ultisnips.git
+[submodule "_vim/bundle/vimux"]
+	path = _vim/bundle/vimux
+	url = git://github.com/benmills/vimux.git
