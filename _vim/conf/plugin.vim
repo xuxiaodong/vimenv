@@ -16,7 +16,7 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " powerline
-let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='fancy'
 let g:Powerline_theme='codefun'
 
 " nerdtree

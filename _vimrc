@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2013 Jun 30
+" modified:  2013 Jul 06
 "
 
 "-- source --"
@@ -36,11 +36,11 @@ syntax on
 
 "-- colorscheme --"
 
-set background=dark
 if &t_Co < 256
-  colorscheme miro8
+    colorscheme miro8
 else
-  colorscheme Tomorrow-Night
+    set background=dark
+    colorscheme hybrid
 endif
 
 "-- file --"

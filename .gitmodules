@@ -124,3 +124,9 @@
 [submodule "_vim/bundle/vimux"]
 	path = _vim/bundle/vimux
 	url = git://github.com/benmills/vimux.git
+[submodule "_vim/bundle/kolor"]
+	path = _vim/bundle/kolor
+	url = git://github.com/zeis/vim-kolor.git
+[submodule "_vim/bundle/hybrid"]
+	path = _vim/bundle/hybrid
+	url = git://github.com/w0ng/vim-hybrid.git
