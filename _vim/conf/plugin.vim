@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2013 Jul 03
+" modified : 2013 Jul 06
 "
 
 "-- plugin --"
@@ -45,6 +45,9 @@ let g:indent_guides_guide_size=1
 " ultisnips
 let g:UltiSnipsEditSplit='horizontal'
 let g:UltiSnipsSnippetsDir='~/.vim/bundle/ultisnips/UltiSnips'
+
+" hybrid
+let g:hybrid_use_Xresources=1
 
 " markdown
 autocmd BufRead *.md set ft=markdown
