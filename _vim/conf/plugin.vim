@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2013 Jul 06
+" modified : 2013 Jul 11
 "
 
 "-- plugin --"
@@ -16,7 +16,7 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " powerline
-let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='unicode'
 let g:Powerline_theme='codefun'
 
 " nerdtree
@@ -48,6 +48,10 @@ let g:UltiSnipsSnippetsDir='~/.vim/bundle/ultisnips/UltiSnips'
 
 " hybrid
 let g:hybrid_use_Xresources=1
+
+" splitjoin
+nmap sj :SplitjoinSplit<cr>
+nmap sk :SplitjoinJoin<cr>
 
 " markdown
 autocmd BufRead *.md set ft=markdown
