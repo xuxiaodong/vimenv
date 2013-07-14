@@ -130,3 +130,9 @@
 [submodule "_vim/bundle/hybrid"]
 	path = _vim/bundle/hybrid
 	url = git://github.com/w0ng/vim-hybrid.git
+[submodule "_vim/bundle/unite"]
+	path = _vim/bundle/unite
+	url = git://github.com/Shougo/unite.vim.git
+[submodule "_vim/bundle/unite-outline"]
+	path = _vim/bundle/unite-outline
+	url = git://github.com/h1mesuke/unite-outline.git
