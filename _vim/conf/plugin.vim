@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2013 Jul 14
+" modified : 2013 Jul 23
 "
 
 "-- plugin --"
@@ -16,7 +16,7 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " powerline
-let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='unicode'
 let g:Powerline_theme='codefun'
 
 " nerdtree
@@ -35,7 +35,7 @@ nmap to :TagbarToggle<cr>
 let g:slime_target='tmux'
 
 " neocomplcache
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup=1
 
 " indent guides
 let g:indent_guides_enable_on_vim_startup=0

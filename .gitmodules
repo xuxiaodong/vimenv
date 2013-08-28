@@ -106,9 +106,6 @@
 [submodule "_vim/bundle/neocomplcache"]
 	path = _vim/bundle/neocomplcache
 	url = git://github.com/Shougo/neocomplcache.vim.git
-[submodule "_vim/bundle/indent-guides"]
-	path = _vim/bundle/indent-guides
-	url = git://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "_vim/bundle/tabular"]
 	path = _vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
@@ -136,3 +133,6 @@
 [submodule "_vim/bundle/unite-outline"]
 	path = _vim/bundle/unite-outline
 	url = git://github.com/h1mesuke/unite-outline.git
+[submodule "_vim/bundle/perlhelp"]
+	path = _vim/bundle/perlhelp
+	url = git://github.com/LStinson/perlhelp-vim.git
