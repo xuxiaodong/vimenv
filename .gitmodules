@@ -136,3 +136,6 @@
 [submodule "_vim/bundle/perlhelp"]
 	path = _vim/bundle/perlhelp
 	url = git://github.com/LStinson/perlhelp-vim.git
+[submodule "_vim/bundle/argumentative"]
+	path = _vim/bundle/argumentative
+	url = git://github.com/PeterRincker/vim-argumentative.git
