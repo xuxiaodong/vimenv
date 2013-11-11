@@ -139,3 +139,6 @@
 [submodule "_vim/bundle/argumentative"]
 	path = _vim/bundle/argumentative
 	url = git://github.com/PeterRincker/vim-argumentative.git
+[submodule "_vim/bundle/nginx-vim-syntax"]
+	path = _vim/bundle/nginx-vim-syntax
+	url = git://github.com/evanmiller/nginx-vim-syntax.git

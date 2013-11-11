@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2012 Jul 21
+" modified : 2013 Oct 22
 "
 
 "-- abbrevs --"
@@ -22,3 +22,5 @@ iab _xm <!--more-->
 iab _hlb {% highlight bash %}
 iab _hlr {% highlight ruby %}
 iab _ehl {% endhighlight %}
+
+iab ,, =>
