@@ -142,3 +142,6 @@
 [submodule "_vim/bundle/nginx-vim-syntax"]
 	path = _vim/bundle/nginx-vim-syntax
 	url = git://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "_vim/bundle/python-mode"]
+	path = _vim/bundle/python-mode
+	url = git://github.com/klen/python-mode.git
