@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2013 Jul 23
+" modified : 2013 Dec 08
 "
 
 "-- plugin --"
@@ -16,7 +16,7 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " powerline
-let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='compatible'
 let g:Powerline_theme='codefun'
 
 " nerdtree
@@ -38,13 +38,16 @@ let g:slime_target='tmux'
 let g:neocomplcache_enable_at_startup=1
 
 " indent guides
-let g:indent_guides_enable_on_vim_startup=0
-let g:indent_guides_start_level=1
-let g:indent_guides_guide_size=1
+"let g:indent_guides_enable_on_vim_startup=0
+"let g:indent_guides_start_level=1
+"let g:indent_guides_guide_size=1
 
 " ultisnips
 let g:UltiSnipsEditSplit='horizontal'
 let g:UltiSnipsSnippetsDir='~/.vim/bundle/ultisnips/UltiSnips'
+
+" python mode
+"let g:pymode_rope_lookup_project=0
 
 " hybrid
 let g:hybrid_use_Xresources=1
