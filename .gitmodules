@@ -64,9 +64,6 @@
 [submodule "_vim/bundle/numbers"]
 	path = _vim/bundle/numbers
 	url = git://github.com/xuxiaodong/numbers.vim.git
-[submodule "_vim/bundle/powerline"]
-	path = _vim/bundle/powerline
-	url = git://github.com/xuxiaodong/vim-powerline.git
 [submodule "_vim/bundle/commentary"]
 	path = _vim/bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
@@ -142,3 +139,6 @@
 [submodule "_vim/bundle/nginx-vim-syntax"]
 	path = _vim/bundle/nginx-vim-syntax
 	url = git://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "_vim/bundle/airline"]
+	path = _vim/bundle/airline
+	url = git://github.com/bling/vim-airline.git

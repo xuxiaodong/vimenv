@@ -15,9 +15,13 @@ vmap <silent> <leader>i= <esc>:AlignPush<cr>:AlignCtrl lp1P1<cr>:'<,'>Align =<cr
 vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr>:AlignPop<cr>
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
+" airline
+let g:airline_powerline_fonts=1
+let g:airline_theme='tomorrow'
+
 " powerline
-let g:Powerline_symbols='compatible'
-let g:Powerline_theme='codefun'
+"let g:Powerline_symbols='compatible'
+"let g:Powerline_theme='codefun'
 
 " nerdtree
 let g:NERDTreeWinSize=25
