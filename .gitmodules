@@ -40,12 +40,6 @@
 [submodule "_vim/bundle/ruby"]
 	path = _vim/bundle/ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
-[submodule "_vim/bundle/textobj-rubyblock"]
-	path = _vim/bundle/textobj-rubyblock
-	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
-[submodule "_vim/bundle/textobj-user"]
-	path = _vim/bundle/textobj-user
-	url = git://github.com/kana/vim-textobj-user.git
 [submodule "_vim/bundle/markdown-helper"]
 	path = _vim/bundle/markdown-helper
 	url = git://github.com/xuxiaodong/vim-markdown-helper.git
@@ -67,21 +61,12 @@
 [submodule "_vim/bundle/commentary"]
 	path = _vim/bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule "_vim/bundle/textobj-entire"]
-	path = _vim/bundle/textobj-entire
-	url = git://github.com/kana/vim-textobj-entire.git
 [submodule "_vim/bundle/endwise"]
 	path = _vim/bundle/endwise
 	url = git://github.com/tpope/vim-endwise.git
 [submodule "_vim/bundle/splitjoin"]
 	path = _vim/bundle/splitjoin
 	url = git://github.com/AndrewRadev/splitjoin.vim.git
-[submodule "_vim/bundle/textobj-function"]
-	path = _vim/bundle/textobj-function
-	url = git://github.com/kana/vim-textobj-function.git
-[submodule "_vim/bundle/textobj-rubysymbol"]
-	path = _vim/bundle/textobj-rubysymbol
-	url = git://github.com/bootleq/vim-textobj-rubysymbol.git
 [submodule "_vim/bundle/ansiesc"]
 	path = _vim/bundle/ansiesc
 	url = git://github.com/vim-scripts/AnsiEsc.vim.git

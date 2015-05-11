@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2013 Jul 06
+" modified:  2015 May 10
 "
 
 "-- source --"
@@ -40,7 +40,7 @@ if &t_Co < 256
     colorscheme miro8
 else
     set background=dark
-    colorscheme hybrid
+    colorscheme Tomorrow-Night-Eighties
 endif
 
 "-- file --"
@@ -63,7 +63,7 @@ set shiftround
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set textwidth=78
+set textwidth=79
 
 set autoindent
 set smartindent
