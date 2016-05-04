@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2012 Jun 30
+" modified : 2016 Apr 26
 "
 
 "-- update timestamps --"
@@ -97,4 +97,18 @@ function! _perl_comment()
   else
     exe 's/^/#/g'
   endif
+endfunction
+
+"-- Markdown header --"
+
+function! MarkdownHeader()
+let date = strftime("%Y-%m-%d %T")
+exe "normal iTitle: "
+exe "normal oDate: " . date
+exe "normal oAuthors: toy"
+exe "normal oCategory: News"
+exe "normal oTags: "
+exe "normal oSlug: "
+exe "normal oVia: "
+exe "normal o"
 endfunction

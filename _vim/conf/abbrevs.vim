@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2013 Oct 22
+" modified : 2016 Apr 26
 "
 
 "-- abbrevs --"
@@ -10,7 +10,7 @@ iab _mo <c-r>="modified : " . strftime("%Y %b %d")<cr>
 
 iab _na Xu Xiaodong 
 iab _ma xxdlhy@gmail.com
-iab _da <c-r>=strftime("%Y %b %d")<cr>
+iab _da <c-r>=strftime("%Y-%m-%d %T")<cr>
 
 iab _fn <c-r>=bufname("%")<cr>
 iab _pl #!/usr/bin/env perl
@@ -24,3 +24,6 @@ iab _hlr {% highlight ruby %}
 iab _ehl {% endhighlight %}
 
 iab ,, =>
+
+iab _ps <!-- PELICAN_END_SUMMARY -->
+iab _pi [![]({filename}/images/)]({filename}/images/)
