@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 May 04
+" modified : 2016 May 06
 "
 
 "-- plugin --"
@@ -16,7 +16,7 @@ vmap <silent> <leader>i, <esc>:AlignPush<cr>:AlignCtrl lp0P1<cr>:'<,'>Align ,<cr
 vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr>:AlignPop<cr>
 
 " airline
-"let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 let g:airline_theme='tomorrow'
 let g:airline_section_y=''
 
