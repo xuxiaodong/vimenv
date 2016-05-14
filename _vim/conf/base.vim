@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2015 May 21
+" modified:  2016 May 14
 "
 
 "-- base --"
@@ -15,7 +15,10 @@ vmap <s-tab> <gv
 "nmap _m :call _set_modeline()<cr>
 
 " add markdown header
-nmap _m :call MarkdownHeader()<cr>
+nmap _m :call _markdown_header()<cr>
+
+" add script header
+nmap _h :call _set_sh_header()<cr>
 
 " auto update timestamps
 autocmd BufWritePre * call _last_modified()

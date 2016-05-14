@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2015 May 10
+" modified:  2016 May 13
 "
 
 "-- source --"
@@ -40,7 +40,7 @@ if &t_Co < 256
     colorscheme miro8
 else
     set background=dark
-    colorscheme Tomorrow-Night-Eighties
+    colorscheme Tomorrow-Night
 endif
 
 "-- file --"

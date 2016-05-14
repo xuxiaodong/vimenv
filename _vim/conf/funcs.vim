@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 Apr 26
+" modified : 2016 May 14
 "
 
 "-- update timestamps --"
@@ -21,36 +21,6 @@ endfunction
 function! _set_modeline()
   let filetype = input("Please enter file type: ", expand('<cword>'))
   exe "normal i# vim: ai:et:ts=2:sw=2:sts=2:tw=78:ft=" . filetype
-endfunction
-
-"-- add ruby head --"
-
-function! _ruby_head()
-  let filename = bufname("%")
-  let date = strftime("%Y %b %d")
-  exe "normal i#!/usr/bin/env ruby"
-  exe "normal o#"
-  exe "normal o# name     : " . filename
-  exe "normal o# author   : Xu Xiaodong <xxdlhy@gmail.com>"
-  exe "normal o# license  : GPL"
-  exe "normal o# created  : " . date
-  exe "normal o# modified : " . date
-  exe "normal o#"
-endfunction
-
-"-- add perl head --"
-
-function! _perl_head()
-  let filename = bufname("%")
-  let date = strftime("%Y %b %d")
-  exe "normal i#!/usr/bin/env perl"
-  exe "normal o#"
-  exe "normal o# name     : " . filename
-  exe "normal o# author   : Xu Xiaodong <xxdlhy@gmail.com>"
-  exe "normal o# license  : GPL"
-  exe "normal o# created  : " . date
-  exe "normal o# modified : " . date
-  exe "normal o#"
 endfunction
 
 "-- add perl 'use' statement --"
@@ -99,9 +69,9 @@ function! _perl_comment()
   endif
 endfunction
 
-"-- Markdown header --"
+"-- markdown header --"
 
-function! MarkdownHeader()
+function! _markdown_header()
 let date = strftime("%Y-%m-%d %T")
 exe "normal iTitle: "
 exe "normal oDate: " . date
@@ -111,4 +81,25 @@ exe "normal oTags: "
 exe "normal oSlug: "
 exe "normal oVia: "
 exe "normal o"
+endfunction
+
+"-- add script header --"
+
+function! _set_sh_header()
+  let filetype = input("File type: ", expand('<cword>'))
+  let filename = bufname("%")
+  let date = strftime("%Y %b %d")
+  if (filetype != '')
+    exe "normal i#!/usr/bin/env " . filetype
+    exe "normal o#"
+  else
+    exe "normal i#"
+  endif
+  exe "normal o# name     : " . filename
+  exe "normal o# author   : Xu Xiaodong <xxdlhy@gmail.com>"
+  exe "normal o# license  : GPL"
+  exe "normal o# created  : " . date
+  exe "normal o# modified : " . date
+  exe "normal o#"
+  exe "normal o"
 endfunction

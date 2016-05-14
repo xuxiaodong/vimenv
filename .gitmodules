@@ -130,3 +130,9 @@
 [submodule "_vim/bundle/emmet"]
 	path = _vim/bundle/emmet
 	url = git://github.com/mattn/emmet-vim.git
+[submodule "_vim/bundle/css-color"]
+	path = _vim/bundle/css-color
+	url = git://github.com/skammer/vim-css-color.git
+[submodule "_vim/bundle/gruvbox"]
+	path = _vim/bundle/gruvbox
+	url = git://github.com/morhetz/gruvbox.git
