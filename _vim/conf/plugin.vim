@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 May 06
+" modified : 2016 May 15
 "
 
 "-- plugin --"
@@ -18,7 +18,14 @@ vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr
 " airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='tomorrow'
-let g:airline_section_y=''
+if !exists('g:airline_symbols')
+    let g:airline_symbols={}
+endif
+let g:airline_symbols.maxlinenr=''
+"let g:airline_section_y=''
+"let g:airline_section_z=''
+"let g:airline_section_error=''
+"let g:airline_section_warning=''
 
 " nerdtree
 let g:NERDTreeWinSize=25

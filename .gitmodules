@@ -136,3 +136,15 @@
 [submodule "_vim/bundle/gruvbox"]
 	path = _vim/bundle/gruvbox
 	url = git://github.com/morhetz/gruvbox.git
+[submodule "_vim/bundle/airline-themes"]
+	path = _vim/bundle/airline-themes
+	url = git://github.com/vim-airline/vim-airline-themes.git
+[submodule "_vim/bundle/hicterm"]
+	path = _vim/bundle/hicterm
+	url = git://github.com/sunaku/vim-hicterm.git
+[submodule "_vim/bundle/shortcut"]
+	path = _vim/bundle/shortcut
+	url = git://github.com/sunaku/vim-shortcut.git
+[submodule "_vim/bundle/base16"]
+	path = _vim/bundle/base16
+	url = git://github.com/chriskempson/base16-vim.git

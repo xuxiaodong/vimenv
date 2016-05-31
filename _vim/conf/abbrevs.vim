@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 Apr 26
+" modified : 2016 May 31
 "
 
 "-- abbrevs --"
@@ -26,4 +26,5 @@ iab _ehl {% endhighlight %}
 iab ,, =>
 
 iab _ps <!-- PELICAN_END_SUMMARY -->
-iab _pi [![]({filename}/images/)]({filename}/images/)
+iab _pi ![]({filename}/images/)
+iab _pil [![]({filename}/images/)]({filename}/images/)
