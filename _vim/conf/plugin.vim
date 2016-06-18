@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 May 15
+" modified : 2016 Jun 15
 "
 
 "-- plugin --"
@@ -82,3 +82,12 @@ autocmd BufRead *.md set ft=markdown
 
 " mail
 "autocmd BufRead ~/.mutt/temp/mutt* :source ~/.vim/conf/mail.vim
+
+" incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backware)
+map g/ <Plug>(incsearch-stay)
+
+" easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)

@@ -148,3 +148,12 @@
 [submodule "_vim/bundle/base16"]
 	path = _vim/bundle/base16
 	url = git://github.com/chriskempson/base16-vim.git
+[submodule "_vim/bundle/bubblegum"]
+	path = _vim/bundle/bubblegum
+	url = git://github.com/baskerville/bubblegum.git
+[submodule "_vim/bundle/incsearch"]
+	path = _vim/bundle/incsearch
+	url = git://github.com/haya14busa/incsearch.vim.git
+[submodule "_vim/bundle/easy-align"]
+	path = _vim/bundle/easy-align
+	url = git://github.com/junegunn/vim-easy-align.git
