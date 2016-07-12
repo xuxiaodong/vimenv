@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 Jun 15
+" modified : 2016 Jun 28
 "
 
 "-- plugin --"
@@ -17,7 +17,7 @@ vmap <silent> <leader>i( <esc>:AlignPush<cr>:AlignCtrl lp0P0<cr>:'<,'>Align (<cr
 
 " airline
 let g:airline_powerline_fonts=1
-let g:airline_theme='tomorrow'
+let g:airline_theme='gruvbox'
 if !exists('g:airline_symbols')
     let g:airline_symbols={}
 endif
@@ -26,6 +26,7 @@ let g:airline_symbols.maxlinenr=''
 "let g:airline_section_z=''
 "let g:airline_section_error=''
 "let g:airline_section_warning=''
+let g:airline#extensions#tabline#enabled = 1
 
 " nerdtree
 let g:NERDTreeWinSize=25
@@ -91,3 +92,47 @@ map g/ <Plug>(incsearch-stay)
 " easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" rainbow_parentheses
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+" dasht
+" Search API docs for query you type in:
+nnoremap <Leader>k :Dasht<Space>
+
+" Search API docs for word under cursor:
+nnoremap <silent> <Leader>K :call Dasht([expand('<cWORD>'), expand('<cword>')])<Return>
+
+" Search API docs for the selected text:
+vnoremap <silent> <Leader>K y:<C-U>call Dasht(getreg(0))<Return>
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#disable_auto_complete = 1
+
+" indentlines
+let g:indentLine_char = '┆'
+let g:indentLine_enabled = 0

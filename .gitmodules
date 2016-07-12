@@ -157,3 +157,66 @@
 [submodule "_vim/bundle/easy-align"]
 	path = _vim/bundle/easy-align
 	url = git://github.com/junegunn/vim-easy-align.git
+[submodule "_vim/bundle/easymotion"]
+	path = _vim/bundle/easymotion
+	url = git://github.com/easymotion/vim-easymotion.git
+[submodule "_vim/bundle/sneak"]
+	path = _vim/bundle/sneak
+	url = git://github.com/justinmk/vim-sneak.git
+[submodule "_vim/bundle/indent-guides"]
+	path = _vim/bundle/indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "_vim/bundle/indentline"]
+	path = _vim/bundle/indentline
+	url = git://github.com/Yggdroot/indentLine.git
+[submodule "_vim/bundle/rainbow_parentheses"]
+	path = _vim/bundle/rainbow_parentheses
+	url = git://github.com/kien/rainbow_parentheses.vim.git
+[submodule "_vim/bundle/signature"]
+	path = _vim/bundle/signature
+	url = git://github.com/kshenoy/vim-signature.git
+[submodule "_vim/bundle/startify"]
+	path = _vim/bundle/startify
+	url = git://github.com/mhinz/vim-startify.git
+[submodule "_vim/bundle/extradite"]
+	path = _vim/bundle/extradite
+	url = git://github.com/int3/vim-extradite.git
+[submodule "_vim/bundle/snipmate"]
+	path = _vim/bundle/snipmate
+	url = git://github.com/garbas/vim-snipmate.git
+[submodule "_vim/bundle/tlib_vim"]
+	path = _vim/bundle/tlib_vim
+	url = git://github.com/tomtom/tlib_vim.git
+[submodule "_vim/bundle/addon-mw-utils"]
+	path = _vim/bundle/addon-mw-utils
+	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "_vim/bundle/snippets"]
+	path = _vim/bundle/snippets
+	url = git://github.com/honza/vim-snippets.git
+[submodule "_vim/bundle/zeavim"]
+	path = _vim/bundle/zeavim
+	url = git://github.com/KabbAmine/zeavim.vim.git
+[submodule "_vim/bundle/dasht"]
+	path = _vim/bundle/dasht
+	url = git://github.com/sunaku/vim-dasht.git
+[submodule "_vim/bundle/deoplete.nvim"]
+	path = _vim/bundle/deoplete.nvim
+	url = git://github.com/Shougo/deoplete.nvim.git
+[submodule "_vim/bundle/neoman"]
+	path = _vim/bundle/neoman
+	url = git://github.com/nhooyr/neoman.vim.git
+[submodule "_vim/bundle/deoplete-jedi"]
+	path = _vim/bundle/deoplete-jedi
+	url = git://github.com/zchee/deoplete-jedi.git
+[submodule "_vim/bundle/vinegar"]
+	path = _vim/bundle/vinegar
+	url = git://github.com/tpope/vim-vinegar.git
+[submodule "_vim/bundle/vimfiler"]
+	path = _vim/bundle/vimfiler
+	url = git://github.com/Shougo/vimfiler.vim.git
+[submodule "_vim/bundle/ags"]
+	path = _vim/bundle/ags
+	url = git://github.com/gabesoft/vim-ags.git
+[submodule "_vim/bundle/goyo"]
+	path = _vim/bundle/goyo
+	url = git://github.com/junegunn/goyo.vim.git

@@ -1,6 +1,6 @@
 "
 " author:    Xu Xiaodong <xxdlhy@gmail.com>
-" modified:  2016 May 15
+" modified:  2016 Jun 27
 "
 
 "-- source --"
@@ -40,7 +40,7 @@ if &t_Co < 256
     colorscheme miro8
 else
     set background=dark
-    colorscheme Tomorrow-Night
+    colorscheme gruvbox
 endif
 
 "-- file --"
@@ -153,6 +153,10 @@ nmap <leader>W :%s/\s\+$//<cr>:let @/=''<cr>
 nmap <leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 "-- other --"
+
+" c
+autocmd BufRead,BufNewFile *.h set filetype=c
+autocmd FileType c setlocal expandtab tabstop=8 shiftwidth=8 softtabstop=8
 
 " reload .vimrc
 autocmd! BufWritePost vimrc source ~/.vimrc
