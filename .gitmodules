@@ -7,9 +7,6 @@
 [submodule "_vim/bundle/jellybeans"]
 	path = _vim/bundle/jellybeans
 	url = git://github.com/nanotech/jellybeans.vim.git
-[submodule "_vim/bundle/smartinput"]
-	path = _vim/bundle/smartinput
-	url = git://github.com/kana/vim-smartinput.git
 [submodule "_vim/bundle/nerdcommenter"]
 	path = _vim/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
@@ -220,3 +217,15 @@
 [submodule "_vim/bundle/goyo"]
 	path = _vim/bundle/goyo
 	url = git://github.com/junegunn/goyo.vim.git
+[submodule "_vim/bundle/robotframework"]
+	path = _vim/bundle/robotframework
+	url = git://github.com/mfukar/robotframework-vim.git
+[submodule "_vim/bundle/codi"]
+	path = _vim/bundle/codi
+	url = git://github.com/metakirby5/codi.vim.git
+[submodule "_vim/bundle/smartinput"]
+	path = _vim/bundle/smartinput
+	url = git://github.com/kana/vim-smartinput.git
+[submodule "_vim/bundle/gitv"]
+	path = _vim/bundle/gitv
+	url = git://github.com/gregsexton/gitv.git

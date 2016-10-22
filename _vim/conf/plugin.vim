@@ -1,6 +1,6 @@
 "
 " author   : Xu Xiaodong <xxdlhy@gmail.com>
-" modified : 2016 Jun 28
+" modified : 2016 Sep 21
 "
 
 "-- plugin --"
@@ -22,6 +22,8 @@ if !exists('g:airline_symbols')
     let g:airline_symbols={}
 endif
 let g:airline_symbols.maxlinenr=''
+let g:airline_symbols.notexists=''
+let g:airline_symbols.whitespace=''
 "let g:airline_section_y=''
 "let g:airline_section_z=''
 "let g:airline_section_error=''
